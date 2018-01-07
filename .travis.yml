@@ -3,4 +3,4 @@ services:
   - docker
 
 install:
-  - docker image build
+  - docker image build .
