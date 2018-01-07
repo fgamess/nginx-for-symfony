@@ -5,8 +5,8 @@ MAINTAINER Franck GAMESS <xxxxxxx@xxxx.com>
 RUN apt-get update && apt-get install -y \
     nginx
 
-ADD site.conf /etc/nginx/
-ADD file_consumer /etc/nginx/sites-available/
+ADD nginx.conf /etc/nginx/
+ADD site.conf /etc/nginx/sites-available/
 
 RUN ln -s /etc/nginx/sites-available/file_consumer /etc/nginx/sites-enabled/file_consumer
 RUN rm /etc/nginx/sites-enabled/default
