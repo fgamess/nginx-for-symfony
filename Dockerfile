@@ -3,7 +3,8 @@ FROM debian:stretch
 MAINTAINER Franck GAMESS <xxxxxxx@xxxx.com>
 
 RUN apt-get update && apt-get install -y \
-    nginx
+    nginx \
+    vim
 
 ADD nginx.conf /etc/nginx/
 ADD site.conf /etc/nginx/sites-available/
