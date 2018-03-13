@@ -14,6 +14,3 @@ RUN rm /etc/nginx/conf.d/default.conf
 # RUN ln -s /etc/nginx/sites-available/file_consumer /etc/nginx/sites-enabled/file_consumer
 
 RUN usermod -u 1000 www-data
-
-CMD ["nginx"]
-EXPOSE 80
