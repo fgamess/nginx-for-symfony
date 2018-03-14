@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y \
 
 ADD nginx.conf /etc/nginx/
 RUN mkdir /etc/nginx/sites-available
+RUN mkdir /etc/nginx/sites-enabled
 ADD conf.d/http.conf /etc/nginx/conf.d/
 ADD upstream.conf /etc/nginx/sites-available/
 RUN rm /etc/nginx/conf.d/default.conf
